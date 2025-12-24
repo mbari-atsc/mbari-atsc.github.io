@@ -7,10 +7,8 @@
 <!-- SEO -->
 <title>About To Shine Cleaning | Emmaus PA Cleaning Services</title>
 <meta name="description" content="About To Shine Cleaning provides professional residential and commercial cleaning services in Emmaus, PA and surrounding areas. Call 484-223-8496 for a free quote.">
-<meta name="keywords" content="Emmaus cleaning service, house cleaning Emmaus PA, commercial cleaning, professional cleaners">
+<meta name="keywords" content="Emmaus cleaning service, house cleaning Emmaus PA, commercial cleaning">
 <meta name="author" content="About To Shine Cleaning">
-<meta name="geo.region" content="US-PA">
-<meta name="geo.placename" content="Emmaus">
 
 <style>
 body {
@@ -41,6 +39,11 @@ margin: auto;
 }
 h2 {
 color: #FFD700;
+}
+.map {
+width: 100%;
+height: 350px;
+border: 0;
 }
 .form-section {
 background: #f4f4f4;
@@ -89,9 +92,9 @@ text-decoration: none;
 <section>
 <h2>About Us</h2>
 <p>
-About To Shine Cleaning proudly serves Emmaus, Pennsylvania and surrounding communities
+About To Shine Cleaning proudly serves Emmaus, Pennsylvania and surrounding areas
 with reliable residential and commercial cleaning services.
-We are committed to detailed, trustworthy, and professional results every visit.
+We focus on consistency, trust, and attention to detail.
 </p>
 </section>
 
@@ -108,20 +111,29 @@ We are committed to detailed, trustworthy, and professional results every visit.
 
 <section>
 <h2>Service Area</h2>
-<p>
-Based in Emmaus, PA — proudly serving surrounding areas throughout the Lehigh Valley.
-</p>
+<p>Based in Emmaus, PA — proudly serving the Lehigh Valley and surrounding communities.</p>
+
+<!-- Google Map Embed -->
+<iframe
+class="map"
+src="https://www.google.com/maps?q=Emmaus,PA&output=embed"
+loading="lazy">
+</iframe>
 </section>
 
 <section id="quote" class="form-section">
 <h2>Request a Free Quote</h2>
 
-<!-- Replace abcdwxyz with your Formspree form ID -->
+<!-- Replace abcdwxyz with your Formspree ID -->
 <form action="https://formspree.io/f/abcdwxyz" method="POST">
+<!-- Redirect to thank you page -->
+<input type="hidden" name="_redirect" value="thank-you.html">
+
 <input type="text" name="name" placeholder="Your Name" required>
 <input type="email" name="email" placeholder="Your Email" required>
 <input type="text" name="phone" placeholder="Phone Number">
 <textarea name="message" rows="5" placeholder="Tell us about your cleaning needs" required></textarea>
+
 <button type="submit">Request Quote</button>
 </form>
 </section>
